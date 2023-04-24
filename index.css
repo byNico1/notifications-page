@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --primary-red: hsl(1, 90%, 64%);
+  --primary-blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#mark-as-read {
+  cursor: pointer;
+}
+
+#mark-as-read:hover {
+  color: blue;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(247, 250, 253);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  font-size: 15px;
+}
+
+header h1 span {
+  text-align: center;
+  margin-left: 0.2rem;
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  border-radius: 0.4rem;
+  padding: 0.17rem 0.65rem;
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.unread {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
+}
+
+.red-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-red);
+  border-radius: 100%;
+  margin-left: 5px;
+}
+
+.app-container {
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 50px;
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.notification-container {
+  margin-block: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.inner-notification-container {
+  margin-left: 20px;
+}
+
+.bold-gray {
+  margin-left: 5px;
+  color: var(--dark-grayish-blue);
+  font-weight: bold;
+}
+
+.time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--dark-grayish-blue);
+}
+
+.person {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.person:hover {
+  color: var(--primary-blue);
+}
+
+.chess-club {
+  cursor: pointer;
+  margin-left: 5px;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.inner-message {
+  padding: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inner-message:hover {
+  background-color: var(--light-grayish-blue-1);
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
